@@ -1,8 +1,6 @@
 package com.labs.dm.jee6.webapp;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import javax.ws.rs.*;
 
 @Path("/")
 public class Hello {
@@ -16,4 +14,25 @@ public class Hello {
     public String helloWorldPost() {
         return "Hello World from POST!";
     }
+
+    @PUT
+    public String helloWorldPut() {
+        return "Hello World from PUT!";
+    }
+
+    @DELETE
+    public String helloWorldDelete() {
+        return "Hello World from DELETE!";
+    }
+
+    @OPTIONS
+    public String helloWorldOptions() {
+        return "Hello World from OPTIONS!";
+    }
+    
+    @HEAD
+    public String helloWorldHead() {
+        return "Hello World from HEAD!";
+    }
+    
 }
