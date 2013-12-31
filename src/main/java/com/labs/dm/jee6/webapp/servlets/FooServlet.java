@@ -4,8 +4,10 @@
 
 package com.labs.dm.jee6.webapp.servlets;
 
+import com.labs.dm.jee6.webapp.jaxrs.FooContainer;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +21,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "FooServlet", urlPatterns = {"/FooServlet"})
 public class FooServlet extends HttpServlet {
 
+    @Inject
+    FooContainer foo;
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -40,6 +45,7 @@ public class FooServlet extends HttpServlet {
             out.println("<title>Servlet FooServlet</title>");            
             out.println("</head>");
             out.println("<body>");
+            foo.getItems();
             out.println("<h1>Servlet FooServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");

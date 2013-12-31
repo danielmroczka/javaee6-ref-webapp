@@ -16,9 +16,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-6.0</artifactId>
+            <version>1.0.0.Final</version>
+            <type>pom</type>
             <scope>provided</scope>
         </dependency>
        
@@ -39,6 +40,12 @@
             <artifactId>jersey-server</artifactId>
             <version>${jersey.version}</version>
         </dependency>        
+
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>2.2.8</version>
+        </dependency>
         <!-- Tesing dependencies -->
         <dependency>
             <groupId>junit</groupId>
@@ -52,12 +59,6 @@
             <artifactId>jersey-client</artifactId>
             <version>${jersey.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-rt</artifactId>
-            <version>2.2.5</version>
-            <type>jar</type>
         </dependency>
     </dependencies>
 

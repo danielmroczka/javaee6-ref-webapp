@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
     <HEAD>
         <TITLE>JBossAS7 JSP snoop page</TITLE>
@@ -120,8 +121,8 @@
             <TR>
                 <TH align=right>Query string:</TH>
                 <TD><% if (request.getQueryString() != null) {
-                out.write(request.getQueryString().replaceAll("<", "&lt;").replaceAll(">", "&gt;"));
-            }%></TD>
+                        out.write(request.getQueryString().replaceAll("<", "&lt;").replaceAll(">", "&gt;"));
+                    }%></TD>
             </TR>
             <TR>
                 <TH align=right>Content length:</TH>
