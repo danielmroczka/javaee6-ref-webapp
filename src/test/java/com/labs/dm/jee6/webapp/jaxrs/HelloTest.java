@@ -1,7 +1,7 @@
 /*
  * Copyright daniel.mroczka@gmail.com. All rights reserved. 
  */
-package com.labs.dm.jee6.webapp;
+package com.labs.dm.jee6.webapp.jaxrs;
 
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.WebResource;

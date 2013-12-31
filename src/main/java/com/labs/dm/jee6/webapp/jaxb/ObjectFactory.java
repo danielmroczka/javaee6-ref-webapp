@@ -1,4 +1,4 @@
-package com.labs.dm.jee6.webapp;
+package com.labs.dm.jee6.webapp.jaxb;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

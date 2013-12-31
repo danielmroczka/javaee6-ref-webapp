@@ -1,8 +1,9 @@
 /*
  * Copyright daniel.mroczka@gmail.com. All rights reserved. 
  */
-package com.labs.dm.jee6.webapp;
+package com.labs.dm.jee6.webapp.jaxrs;
 
+import com.labs.dm.jee6.webapp.jaxb.Foo;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;

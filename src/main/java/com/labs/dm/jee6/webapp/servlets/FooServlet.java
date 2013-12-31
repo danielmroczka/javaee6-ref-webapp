@@ -2,7 +2,7 @@
  * Copyright daniel.mroczka@gmail.com. All rights reserved. 
  */
 
-package com.labs.dm.jee6.webapp;
+package com.labs.dm.jee6.webapp.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
